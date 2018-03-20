@@ -19,6 +19,9 @@ const app = new Vue({
   }
 })
 
+/**
+ * 监听回退按钮的事件
+ */
 window.addEventListener('popstate', () => {
   app.currentRoute = window.location.pathname
 })

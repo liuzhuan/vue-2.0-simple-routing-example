@@ -20,6 +20,11 @@
     },
     computed: {
       isActive () {
+        /**
+         * `vm.$root`: 当前组件树的根 Vue 实例。如果当前实例没有父实例，此实例将会是其自己。
+         * 
+         * https://cn.vuejs.org/v2/api/#vm-root
+         */
         return this.href === this.$root.currentRoute
       }
     },

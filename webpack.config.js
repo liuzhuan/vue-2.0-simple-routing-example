@@ -31,7 +31,15 @@ module.exports = {
     }
   },
   devServer: {
+    /** 
+     * 若遭遇 404，返回 index.html 页面
+     * https://webpack.js.org/configuration/dev-server/#devserver-historyapifallback 
+     */
     historyApiFallback: true,
+    /** 
+     * 隐藏打包信息
+     * https://webpack.js.org/configuration/dev-server/#devserver-noinfo-
+     */
     noInfo: true
   },
   devtool: '#eval-source-map'
